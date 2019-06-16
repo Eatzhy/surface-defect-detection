@@ -105,7 +105,7 @@ training through parameters transfer learning. These experiments show that DBN i
 approach in the high-dimensional-feature-space information extraction task, which can perfectly
 establishes the mapping relationship, and can quickly detect defects with a high accuracy. 
 
-2019.03
+## 2019.03
 
 [1]分割网络用于磁瓦缺陷检测
 
@@ -175,7 +175,7 @@ and yields good overall performance with high precision and acceptable recall ra
 
 个人总结：核心思路同2019.01的第二篇。
 
-2019.05
+## 2019.05
 
 [1]CNN做分类
 
@@ -202,7 +202,7 @@ industrial optical inspection with different classes of textures and different d
 论文摘要： This article presents results from experiments where a detector for defects in visual inspection images was learned from scratch by EANT2, a method for evolutionary reinforcement learning. The detector is constructed as a neural network that takes as input statistical data on filter responses
 from a bank of image filters applied to an image region. Training is done on example images with weakly labelled defects. Experiments show good results of EANT2 in an application area where evolutionary methods are rare. 
 
-2019.05
+## 2019.06
 
 [1]GAN用于缺陷检测
 
