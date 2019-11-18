@@ -260,3 +260,26 @@ learn on a small number of defected surfaces, using only approximately 25-30 def
 论文题目：SDD-CNN: Small Data-Driven Convolution Neural Networks for Subtle Roller Defect Inspection 
 
 Roller bearings are some of the most critical and widely used components in rotating machinery. Appearance defect inspection plays a key role in bearing quality control. However, in real industries, bearing defects are usually extremely subtle and have a low probability of occurrence. This leads to distribution discrepancies between the number of positive and negative samples, which makes intelligent data-driven inspection methods difficult to develop and deploy. This paper presents a small data-driven convolution neural network (SDD-CNN) for roller subtle defect inspection via an ensemble method for small data preprocessing. First, label dilation (LD) is applied to solve the problem of an imbalance in class distribution. Second, a semi-supervised data augmentation (SSDA) method is proposed to extend the dataset in a more efficient and controlled way. In this method, a coarse CNN model is trained to generate ground truth class activation and guide the random cropping of images. Third, four variants of the CNN model, namely, SqueezeNet v1.1, Inception v3, VGG-16, and ResNet-18, are introduced and employed to inspect and classify the surface defects of rollers. Finally, a rich set of experiments and assessments is conducted, indicating that these SDD-CNN models, particularly the SDD-Inception v3 model, perform exceedingly well in the roller defect classification task with a top-1 accuracy reaching 99.56%. In addition, the convergence time and classification accuracy for an SDD-CNN model achieve significant improvement compared to that for the original CNN. Overall, using an SDD-CNN architecture, this paper provides a clear path toward a higher precision and efficiency for roller defect inspection in smart manufacturing. 
+
+## 2019.11
+
+[1] FCN用于缺陷检测，以前也有人搞过，这篇有创新。
+
+论文题目：A High-Efficiency Fully Convolutional Networks for Pixel-Wise Surface Defect Detection
+
+In this paper, we propose a highly efficient deep learning-based method for pixel-wise surface
+defect segmentation algorithm in machine vision. Our method is composed of a segmentation stage (stage
+1), a detection stage (stage 2), and a matting stage (stage 3). In the segmentation stage, a lightweight
+fully convolutional network (FCN) is employed to make a pixel-wise prediction of the defect areas. Those
+predicted defect areas act as the initialization of stage 2, guiding the process of detection to correct the
+improper segmentation. In the matting stage, a guided filter is utilized to refine the contour of the defect
+area to reflect the real abnormal region. Besides that, aiming to achieve the tradeoff between efficiency and
+accuracy, and simultaneously we use depthwise&pointwise convolution layer, strided depthwise convolution layer, and upsample depthwise convolution layer to replace the standard convolution layer, pooling layer, and deconvolution layer, respectively. We validate our findings by analyzing the performance obtained on the dataset of DAGM 2007. 
+
+[2] 又一篇比较不错的GAN网络做表面异常检测，值得细看哈！
+
+题目：Unsupervised fabric defect detection based on a deep convolutional generative adversarial network
+
+Detecting and locating surface defects in textured materials is a crucial but challenging problem due to factors such as texture variations and lack of adequate defective samples prior to testing. In this paper we present a novel unsupervised method for automatically detecting defects in fabrics based on a deep convolutional generative adversarial network (DCGAN). The proposed method extends the standard DCGAN, which consists of a discriminator and a generator, by introducing a new encoder component. With the assistance of this encoder, our model can reconstruct a given query image such that no defects but only normal textures will be preserved in the reconstruction. Therefore, when subtracting the reconstruction from the original image, a residual map can be created to highlight potential defective regions. Besides, our model generates a likelihood map for the image under inspection where each pixel value indicates the probability of occurrence of defects at that location. The residual map and the likelihood map are then synthesized together to form an enhanced fusion map. Typically, the fusion map exhibits uniform gray levels over defect-free regions but distinct deviations over defective areas, which can be further thresholded to produce a binarized segmentation result. Our model can be unsupervisedly trained by feeding with a set of small-sized image patches picked from a few defect-free examples. The training is divided into several successively performed stages, each under an individual training strategy. The performance of the proposed method has been extensively evaluated by a variety of real fabric samples.
+The experimental results in comparison with other methods demonstrate its effectiveness in fabric defect detection. 
+
